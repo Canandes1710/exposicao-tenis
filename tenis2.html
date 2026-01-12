@@ -1,12 +1,25 @@
-<model-viewer src="tenis2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster2.webp" shadow-intensity="1">
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
-    </div>
-    <button slot="ar-button" id="ar-button">
-        View in your space
-    </button>
-    <div id="ar-prompt">
-        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-    </div>
-</model-viewer>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exposição Virtual - Ténis 2</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        body { margin: 0; background-color: #f0f0f0; height: 100vh; }
+        model-viewer { width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
 
+    <model-viewer 
+        src="tenis2.glb" 
+        poster="poster2.webp" 
+        alt="Modelo 3D do segundo ténis"
+        shadow-intensity="1" 
+        camera-controls 
+        auto-rotate 
+        ar>
+    </model-viewer>
+
+</body>
+</html>
